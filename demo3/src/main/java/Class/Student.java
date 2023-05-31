@@ -1,22 +1,20 @@
 package Class;
 
 public class Student {
-    private int id;
-    private String name;
-    private int examScore;
-    private String grade;
-    private String imageUrl;
 
-    public Student(int id, String name, int examScore, String grade,String imageUrl){
+    private int id;
+    private String studentName;
+    private String imageUrl;
+    private String grade;
+
+    public Student(int id, String studentName, String grade, String imageUrl) {
+        super();
+
         this.id = id;
-        this.name = name;
-        this.examScore = examScore;
+        this.studentName = studentName;
         this.grade = grade;
         this.imageUrl = imageUrl;
-
     }
-
-
 
     public int getId() {
         return id;
@@ -26,20 +24,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getStudentName() {
+        return studentName;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getExamScore() {
-        return examScore;
-    }
-
-    public void setExamScore(int examScore) {
-        this.examScore = examScore;
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 
     public String getGrade() {
@@ -57,6 +47,4 @@ public class Student {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
-
-
 }
